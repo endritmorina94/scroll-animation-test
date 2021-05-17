@@ -32,7 +32,7 @@ img {
 .phone-content {
     opacity: 0;
     transform: scale(1.25);
-    animation: disappear 10s infinite;
+    animation: disappear 12s infinite;
 }
 
 .phone p {
@@ -57,7 +57,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    animation: scroll-down 10s infinite;
+    animation: scroll-down 12s infinite;
 }
 
 .unlock p {
@@ -74,7 +74,7 @@ img {
     background-color: black;
     display: inline-block;
     text-transform: uppercase;
-    animation: button-pressed 10s infinite;
+    animation: button-pressed 12s infinite;
 }
 
 
@@ -84,7 +84,7 @@ img {
     padding: 0 20px;
     opacity: 0;
     transform: scale(0.9);
-    animation: pricer 10s infinite;
+    animation: pricer 12s infinite;
 }
 
 .prices p {
