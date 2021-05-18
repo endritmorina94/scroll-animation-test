@@ -31,8 +31,7 @@ img {
 
 .phone-content {
     opacity: 0;
-    transform: scale(1.25);
-    animation: disappear 12s infinite;
+    transform: scale(1.2);
 }
 
 .phone p {
@@ -57,7 +56,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    animation: scroll-down 12s infinite;
+    /* animation: scroll-down 12s infinite; */
 }
 
 .unlock p {
@@ -74,7 +73,7 @@ img {
     background-color: black;
     display: inline-block;
     text-transform: uppercase;
-    animation: button-pressed 12s infinite;
+    /* animation: button-pressed 12s infinite; */
 }
 
 
@@ -84,7 +83,7 @@ img {
     padding: 0 20px;
     opacity: 0;
     transform: scale(0.9);
-    animation: pricer 12s infinite;
+    /* animation: pricer 12s infinite; */
 }
 
 .prices p {
@@ -98,7 +97,7 @@ img {
     align-items: center;
 }
 
-
+/*
 @keyframes pricer {
     38% {
         transform: scale(0.8);
@@ -115,9 +114,9 @@ img {
         opacity: 1;
     }
 
-}
+} */
 
-@keyframes scroll-down {
+/* @keyframes scroll-down {
     65% {
         bottom: 0;
         left: 0;
@@ -136,9 +135,9 @@ img {
         opacity: 0;
         }
 
-}
+} */
 
-@keyframes button-pressed {
+/* @keyframes button-pressed {
     0 {
         transform: scale(1);
         background-color: black;
@@ -165,9 +164,9 @@ img {
         background-color: white;
         color: black;
     }
+} */
 
-}
-
+/*
 @keyframes disappear {
 
     5% {
@@ -188,4 +187,4 @@ img {
        opacity: 0;
        transform: scale(1);
    }
-}
+} */
