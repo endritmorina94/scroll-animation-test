@@ -19,6 +19,8 @@ img {
 
 .muted {
     color: rgb(163, 163, 163);
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .container {
@@ -70,10 +72,11 @@ img {
 
 /*SPINNER LOADER START */
 .spinner {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  opacity: 0;
   width: 100%;
   height: 100%;
   transform: rotate(-45deg);
@@ -91,16 +94,18 @@ img {
 }
 
 .spinner .cover {
-    border-width: 6px;
+    width: 33px;
+    height: 33px;
+    border-width: 9px;
     border-top-color: white;
+    border-left-color: white;
     z-index: 1;
 }
 
 .spinner .top,
-.spinner .right,
-.spinner .bottom ,
-.spinner .left{
+.spinner .bottom {
     border-top-color: black;
+    border-left-color: white;
 }
 
 .checkmark:after {
@@ -117,8 +122,134 @@ img {
 }
 /*SPINNER LOADER END */
 
+/* PHONE ONE START */
+.one .phone-content {
+    opacity: 0;
+    padding: 30px 0 10px;
+}
+
+.total-balance {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.amount {
+    height: 36px;
+    overflow: hidden;
+    font-size: 30px;
+    margin: 10px 0 25px;
+    position: relative;
+}
+
+.amounts {
+    position: absolute;
+    top: -72px;
+    left: 0;
+}
+
+.flag-container {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flag-container img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.currency span {
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+.balance-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.plus {
+    background-color: rgb(150, 150, 150);
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    font-size: 22px;
+    line-height: 23px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+}
+
+
+.balances-list {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.balance img {
+    width: 45px;
+    border-radius: 3px;
+}
+
+.balance-info {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.balance-blocks {
+    position: absolute;
+    width: 100%;
+    top: -147px;
+    left: 0;
+}
+
+.displayed {
+    position: absolute;
+    width: 100%;
+    top: 148px;
+    left: 0;
+}
+
+.balance-blocks .naira,
+.balance-blocks .usd {
+    position: absolute;
+    width: 100%;
+    top: 148px;
+    left: 0;
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.gradient-fader {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(180deg,transparent,#000);
+}
+
+/* PHONE ONE ENDING */
+
 /*PHONE TWO START */
-/* PHONE TWO */
 .two p.muted{
     text-transform: uppercase;
 }
@@ -182,7 +313,7 @@ img {
 
 .success-screen {
     background: rgb(56,54,118);
-    background: radial-gradient(circle, rgba(56,54,118,1) 0%, rgba(44,42,97,1) 51%);
+    background: radial-gradient(circle, rgba(56,54,118,1) 20%, rgba(44,42,97,1) 51%);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -204,19 +335,10 @@ img {
     bottom: 15px;
 }
 
-.two .spinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  opacity: 0;
-}
-
 .two .spinner .top,
-.two .spinner .right,
-.two .spinner .bottom,
-.two .spinner .left{
+.two .spinner .bottom{
     border-top-color: white;
+    border-left-color: white;
 }
 
 .two .spinner div {
@@ -230,7 +352,11 @@ img {
 }
 
 .two .success-screen .spinner .cover {
-    border-top-color: #383676;
+    border-top-color: rgba(56,54,118,1);
+    border-left-color: rgba(56,54,118,1);
+    width: 54px;
+    height: 54px;
+    border-width: 12px;
 }
 
 .two .checkmark:after {
@@ -260,7 +386,7 @@ img {
     bottom: 0;
     left: 0;
     width: 100%;
-    max-height: 217px;
+    max-height: 220px;
     background-color: black;
     box-shadow: -5px -50px 30px 25px rgba(0, 0, 0, 0.8);
     display: flex;

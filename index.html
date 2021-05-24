@@ -5,51 +5,102 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Test</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/app.css">
+
     </head>
     <body>
         <div id="root">
-
-
 
             <div class="container">
                 <!-- Single Phone Starting -->
                 <div class="phone one">
                     <div class="phone-content">
-                        <img class="img-header" src="https://assets-global.website-files.com/5deac75ecad2173c2ccccbc7/5e4c01ea5cfa1d432bc1ab89_stellar-news-min.png" alt="newspaper-header">
-                        <p>By Jane Smith</p>
-                        <img class="ballin" src="https://assets-global.website-files.com/5deac75ecad2173c2ccccbc7/5e39f307372fa3245cd2d55e_Arms-min.png" alt="balls">
-                        <p>
-                            Borderless decentralize Nigerian naira economic public ledger digital.
-                            Stablecoins wallet send, digital assets multisig path payment value tokenize.
-                            Fast API Brazilian reais trade compliance make markets.
-                            Open source no middleman, bank cross border API financial institutions.
-                        <br>
-                        <br>
-                            Atomic swap universal asset issuer redeem. Distributed cash tokens access equitable nonprofit.
-                        </p>
 
-                        <div class="unlock">
+                        <div class="total-balance">
+                            <div class="muted">
+                                BALANCE
+                            </div>
+                            <div class="amount">
+                                <div class="amounts">
+                                    <span>$492.40</span>
 
-                            <div class="prices">
-                                <div class="row">
-                                    <p>Price</p> <p>0.05</p>
-                                </div>
-                                <div class="row">
-                                    <p>Fee</p> <p>0.00001 XLM</p>
-                                </div>
-                                <div class="row">
-                                    <p>Time</p> <p>5 seconds</p>
+                                    <span>$472.72</span>
+
+                                    <span>$187.84</span>
                                 </div>
                             </div>
+                            <div class="currency">
+                                <div class="flag-container">
+                                    <img src="img/usa-flag.svg" alt="usa-flag">
+                                </div>
+                                <span>USD</span>
+                            </div>
+                        </div>
 
-                            <p>Unlock this article for $0.05</p>
-                            <div class="btn-container">
-                                <a class="btn" href="#">Unlock</a>
+                        <div class="personal-balance">
+                            <div class="balance-title">
+                                <div class="muted">
+                                    YOUR BALANCES
+                                </div>
+                                <span class="plus">+</span>
+                            </div>
+
+                            <div class="balances-list">
+                                <div class="balance-blocks">
+
+                                    <div class="balance naira">
+                                        <img src="img/nig-flag.svg" alt="nig-flag">
+                                        <div class="balance-info">
+                                            <h5>Nigerian Naira</h5>
+                                            <div class="muted">365.50 NGN = 1 USD</div>
+                                        </div>
+                                        <div class="balance-amount">
+                                            7,030.31
+                                        </div>
+                                    </div>
+
+                                    <div class="balance usd">
+                                        <img src="img/usa-flag.svg" alt="usa-flag">
+                                        <div class="balance-info">
+                                            <h5>US Dollar</h5>
+                                            <div class="muted">1 USD = 1 USD</div>
+                                        </div>
+                                        <div class="balance-amount">
+                                            324.88
+                                        </div>
+                                    </div>
+
+                                    <div class="displayed">
+                                        <div class="balance">
+                                            <img src="img/mex-flag.svg" alt="mex-flag">
+                                            <div class="balance-info">
+                                                <h5>Mexican Peso</h5>
+                                                <div class="muted">18.87 MCP = 1 USD</div>
+                                            </div>
+                                            <div class="balance-amount">
+                                                1,974.17
+                                            </div>
+                                        </div>
+
+                                        <div class="balance">
+                                            <img src="img/eur-flag.svg" alt="eur-flag">
+                                            <div class="balance-info">
+                                                <h5>Euro</h5>
+                                                <div class="muted">0.90 EUR = 1 USD</div>
+                                            </div>
+                                            <div class="balance-amount">
+                                                38.97
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="gradient-fader"></div>
                             </div>
 
                         </div>
+
                     </div>
                 </div>
                 <!-- Single Phone Ending -->
@@ -100,10 +151,9 @@
                                 <div class="spinner">
                                     <div class="cover"></div>
                                     <div class="top"></div>
-                                    <div class="right"></div>
                                     <div class="bottom"></div>
-                                    <div class="left"></div>
-                                    <div class="checkmark"></div>
+                                    <div class="checkmark">
+                                    </div>
                                 </div>
                                 <p class="buy-msg">You purchased 0.157 oz of GOLD.</p>
                             </div>
@@ -167,9 +217,7 @@
                                             <div class="spinner">
                                             <div class="cover"></div>
                                             <div class="top"></div>
-                                            <div class="right"></div>
                                             <div class="bottom"></div>
-                                            <div class="left"></div>
                                             <div class="checkmark"></div>
                                         </div>
                                     </div>
@@ -190,7 +238,6 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"></script>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 
